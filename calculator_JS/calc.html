@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="body">
+        <div id="main">
+            <button class="openBtn" onclick="OpenNav()">&#9776</button>
+            <a href="">Login</a>
+        </div>
+    
+        <nav class="Sidebar" id="MySidebar" onclick="open">
+            <a href="#" id="closedBtn" onclick="closedNav()">&times</a>
+            <a href="index.html">HOME</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">PRICE</a>
+            <a href="calc.html" class="calc_">CALC</a>
+            <a href="#" onclick="ColorToggle()">mood type</a>
+        </nav>  
+        <nav class="MyCalc_">
+            <div class="MyCalc">
+                <input type="text" placeholder="0" style= "grid-column: span 4;" id="calc">
+                <button onclick="Clear()" style="background-color: red" >Ac</button>
+                <button onclick="Delete()">del</button>
+                <button onclick="Display('%')">%</button>
+                <button onclick="Display('/')">/</button>
+                <button onclick="Display('7')">7</button>
+                <button onclick="Display('8')">8</button>
+                <button onclick="Display('9')">9</button>
+                <button onclick="Display('*')">*</button>
+                <button onclick="Display('4')">4</button>
+                <button onclick="Display('5')">5</button>
+                <button onclick="Display('6')">6</button>
+                <button onclick="Display('+')">+</button>
+                <button onclick="Display('1')">1</button>
+                <button onclick="Display('2')">2</button>
+                <button onclick="Display('3')">3</button>
+                <button onclick="Display('-')">-</button>
+                <button onclick="Display('0')">0</button>
+                <button onclick="Display('.')">.</button>
+                <button onclick="Calc('=')" style="width: 160px;">=</button>   
+            </div> 
+        </nav>
+    </div>
+    
+    <script src="main.js"></script>
+</body>  
+</html>

@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0a0a;
+    background-image: url("../pexels-karolina-grabowska-6256066.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.light_mood {
+    background-color: white;
+}
+.Sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.Sidebar a{
+    text-decoration: none;
+    display:block;
+    font-size:20px;
+    color: #818181;
+    transition: 0.3s;
+    border-bottom: 1px solid #818181;
+    padding: 10px 10px 10px 32px;
+
+}
+.Sidebar a:hover {
+    color: #f1f1f1;
+    margin-left: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.openBtn {
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.openBtn:hover {
+    background-color: #444 ;
+}
+.Sidebar #closedBtn {
+    direction: rtl;
+    font-size: 50px;
+    padding: 0 20px 0 0;
+
+}
+#main {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    
+}
+
+#main a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 6px 15px;
+    font-size: 25px;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px 20px ;
+}
+#main a:active {
+    background-color: white;
+}
+#main button {
+    font-size: 30px;
+    padding: 0 20px;
+    background-color: black;
+}
+
+.MyCalc{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+
+}
+.MyCalc_ {
+    display: flex;
+    justify-content: center;
+    height: 87vh;
+    align-items: center;
+}
+.body input {
+    padding: 10px 10px;
+    direction: rtl;
+    font-size: 30px;
+    color: black;
+    outline: none;
+    font-family: monospace;
+} 
+.body button {
+    height: 60px;
+    border: none;
+    padding: 10px 5px;
+    background-color: #252525;
+    color: white;
+    font-family: monospace;
+}
+.body button:active {
+    background-color: white;
+}
+.Sidebar .calc_ {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+.Sidebar .home_ {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+body section h2 {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
